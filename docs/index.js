@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     
                     if (names.length === numberOfPpl) {
                         console.log(names);
-                        window.location.href = "../second/fees.html" ;
+                        window.location.href = "second/fees.html" ;
                     } else {
                         alert('fill in all the fields hoe');
                         return;
