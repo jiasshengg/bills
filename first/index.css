@@ -1,0 +1,21 @@
+body {
+  text-align: center ;
+}
+
+#input-container > div { 
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+form input {
+  margin : 5px ;
+}
+
+#loading {
+  display : none ;
+}
+
+.name-input-group  {
+  padding : 5px ;
+  margin :5px ;
+}
