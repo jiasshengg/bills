@@ -86,11 +86,11 @@ document.addEventListener('DOMContentLoaded', function () {
         pplDiv.style.cssText = `
             margin-top: 20px;
             margin-bottom: 20px;
-            margin-left: 25%;
-            margin-right: 25%;
-            padding: 20px;
+            margin-left: 15%;
+            margin-right: 15%;
             border: 1px solid #eee;
             border-radius: 5px;
+            overflow : hidden ;
         `;
 
         const headerDiv = document.createElement('div');
@@ -183,9 +183,6 @@ document.addEventListener('DOMContentLoaded', function () {
         itemDiv.style.cssText = `
             margin-top: 20px;
             margin-bottom: 20px;
-            margin-left: 20%;
-            margin-right: 20%;
-            padding: 20px;
             border: 1px solid #eee;
             border-radius: 5px;
         `;
@@ -193,11 +190,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const headerDiv = document.createElement('div');
         headerDiv.style.cssText = `
             display: grid;
-            grid-template-columns: 2fr 1fr auto;
+            grid-template-columns: auto auto auto;
             gap: 10px;
             align-items: center;
             overflow: hidden;
-            margin: 15px;
+            margin-top : 25px;
+            margin-bottom : 25px;
         `;
 
         const nameInput = document.createElement('input');
