@@ -1,0 +1,62 @@
+body {
+  text-align: center ;
+}
+
+#input-container > div { 
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+form input {
+  margin : 5px ;
+}
+
+.name-input-group  {
+  padding : 5px ;
+  margin :5px ;
+}
+
+.hidden {
+    display: none;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin: 0;
+}
+
+.summary {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.first-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.first-row > div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    justify-content: start;
+}
+

@@ -5,33 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idk</title>
 
-    <link href = "first/index.css" rel = "stylesheet" />
+    <link href = "index.css" rel = "stylesheet" />
     <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
 
 </head>
 <body>
     <h1>Calculate Fees</h1>
 
-    <div id="input-container">
-        <form id="ppl-form">
-            <label for="noOfPpl">Select the number of people:</label>
-            <select name="noOfPpl" id="noOfPpl">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-            </select>
-            <input type="submit" value="Submit">
-        </form>
+    <div id="step1">
+        <button id="add-ppl-btn" class="add-ppl-btn">+ Add Preson</button>
+        <div id = "pplList"></div>
     </div>
 
     <div id="nameFormContainer">
     </div>
 
-    <script src ="first/index.js"></script>
+    <div id="step3" class="container hidden">
+        <div class="first-row">
+            <div class="left">
+                <button id="back-to-step1" class="back-btn">Back</button>
+            </div>
+            <div class="center">
+                <h1>Add Items</h1>
+            </div>
+            <div class="right"></div>
+        </div>
+
+        
+        <div id="itemsContainer">
+            <button id="add-item-btn" class="add-item-btn">+ Add Item</button>
+            <div id="itemsList"></div>
+        </div>
+        
+        <button id="calculate-btn">Calculate Fees</button>
+        
+        <div id="summary" class="summary hidden">
+            <h3>Fee Summary</h3>
+            <div id="summaryContent"></div>
+        </div>
+    </div>
+
+    <script src ="index.js"></script>
 </body>
 </html>
