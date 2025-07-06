@@ -86,8 +86,8 @@ document.addEventListener('DOMContentLoaded', function () {
         pplDiv.style.cssText = `
             margin-top: 20px;
             margin-bottom: 20px;
-            margin-left: 35%;
-            margin-right: 35%;
+            margin-left: 25%;
+            margin-right: 25%;
             padding: 20px;
             border: 1px solid #eee;
             border-radius: 5px;
