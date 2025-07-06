@@ -1,62 +1,77 @@
 body {
-  text-align: center ;
+  text-align: center;
 }
 
-#input-container > div { 
+#input-container > div {
   display: inline-block;
   margin-right: 1rem;
 }
 
 form input {
-  margin : 5px ;
+  margin: 5px;
 }
 
-.name-input-group  {
-  padding : 5px ;
-  margin :5px ;
+.name-input-group {
+  padding: 5px;
+  margin: 5px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .checkbox-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .checkbox-item {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .checkbox-item input[type="checkbox"] {
-    margin: 0;
+  margin: 0;
 }
 
 .summary {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
 }
 
 .first-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .first-row > div {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .left {
-    justify-content: start;
+  justify-content: start;
 }
 
+@media (max-width: 768px) {
+  .item-input-group {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+
+  .item-input-group .header-div {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  .item-input-group .header-div input {
+    margin-bottom: 10px;
+  }
+}

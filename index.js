@@ -1,7 +1,7 @@
 let appState = {
     numberOfPeople: 0,
     people: [],
-    items: []
+    items: [],
 };
 
 let pplCounter = 0;
@@ -86,11 +86,11 @@ document.addEventListener('DOMContentLoaded', function () {
         pplDiv.style.cssText = `
             margin-top: 20px;
             margin-bottom: 20px;
-            margin-left: 15%;
-            margin-right: 15%;
+            margin-left: 5px;
+            margin-right: 5px;
             border: 1px solid #eee;
             border-radius: 5px;
-            overflow : hidden ;
+            overflow: hidden;
         `;
 
         const headerDiv = document.createElement('div');
@@ -173,9 +173,9 @@ document.addEventListener('DOMContentLoaded', function () {
         updateAppState();
     }
 
-    function addItemInput() {
-        const itemsList = document.querySelector('#itemsList');
-        itemCounter++;
+  function addItemInput() {
+    const itemsList = document.querySelector("#itemsList");
+    itemCounter++;
 
         const itemDiv = document.createElement('div');
         itemDiv.className = 'item-input-group';
@@ -183,19 +183,24 @@ document.addEventListener('DOMContentLoaded', function () {
         itemDiv.style.cssText = `
             margin-top: 20px;
             margin-bottom: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
             border: 1px solid #eee;
             border-radius: 5px;
         `;
 
         const headerDiv = document.createElement('div');
+        headerDiv.className = 'header-div';
         headerDiv.style.cssText = `
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: 1fr 1fr auto;
             gap: 10px;
             align-items: center;
             overflow: hidden;
-            margin-top : 25px;
-            margin-bottom : 25px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-left: 15px;
+            margin-right: 15px;
         `;
 
         const nameInput = document.createElement('input');
